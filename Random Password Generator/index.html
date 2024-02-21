@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!--Set default theme to dark mode-->
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Random password generator">
+        <meta name="author" content="Lisette Zeeuw">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">   
+        <title>Random password generator</title>
+    </head>
+
+    <body>
+        <section>
+            <!--Allows users to switch between Dark and Light mode-->
+            <section id="dark-light-container">
+                <button 
+                id="darklight" 
+                class="buttons" 
+                type="button"
+                data-theme-toggle
+                aria-label="Change to light theme">Dark/Light mode
+                </button>
+            </section>
+
+            <!--Title and Main functions: button to generate random passwords and boxes to display content-->
+            <main>
+                <h1>Generate a <span id="title-color2">random password</span></h1>
+                <p>Never use an insecure password again.</p>
+                <button class="buttons">Generate passwords</button>
+
+                <section id="password-boxes" class="container">
+                    <div id="password1" class="password-display"></div>           
+                    <div id="password2" class="password-display"></div>
+                </section>
+
+                <!--Extra options so user can choose the length of the password and clear the provided passwords if they want to generate new ones-->
+                <div>
+                    <label for="pw-length">Set desired password length (min. 12 max. 20)</label><input type="number" id="pw-length" min="12" max="20" placeholder="15">
+                    <button class="buttons">Clear passwords</button>
+                </div>
+            </main>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Color Variables for Light and Dark theme */
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --titlecolor1: #2B283A;
+  --title-color2: #10B981;
+  --subtitle-color: #6B7280;
+  --button-bg: #10B981;
+  --button-color: white;
+  --display-bg: #2F3E53;
+  --display-color: #55F991;
+}
+
+[data-theme="dark"] {
+  --color-bg: #1F2937;
+  --titlecolor1: white;
+  --title-color2: #4ADF86;
+  --subtitle-color: #D5D4D8;
+  --button-bg: #10B981;
+  --button-color: white;
+  --display-bg: #2F3E53;
+  --display-color: #5DEF92;
+}
+
+
+
+body{
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  background: var(--color-bg);
+}
+
+#dark-light-container{
+  max-width: 80%;
+  display: flex;
+}
+
+
+/* Styling Dark/Light Toggle button */
+#darklight{
+  justify-content: start;
+}
+
+/* Styling Title */ 
+h1{
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: var(--titlecolor1);
+  margin-bottom: 1rem;
+}
+
+#title-color2{
+  color: var(--title-color2);
+  display: block;
+}
+
+/* Styling sub-title and label*/
+p, label{
+  color: var(--subtitle-color);
+  margin-bottom: 0.8rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+}
+
+
+.buttons{
+  background: var(--button-bg);
+  color: var(--button-color);
+  font-family: "Inter", sans-serif;
+  border-radius: 1em;
+  width: 10%;
+  height: 2rem;
+  margin: 0.7rem;
+  border: none;
+}
+
+.password-display{
+  background: var(--display-bg);
+  color: var(--display-color);
+  border-radius: 1em;
+  width: 10%;
+  height: 2rem;
+  margin: 0.7rem;
+}
+
+/* Style password length input */
+input{
+  text-align: center;
+}
+
+#pw-length{
+  display: block;
+  text-align: center;
+  margin: 0.76rem auto;
+}
