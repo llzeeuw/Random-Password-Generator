@@ -8,7 +8,6 @@
   - [Links](#links)
 - [My Process](#my-process)
   - [Languages and Tools](#languages-and-tools)
-  - [Built With](#built-with)
   - [What I Learnt](#what-i-learnt)
   - [Useful Resources](#useful-resources)
 - [Author](#author)
@@ -50,7 +49,7 @@
 ### What I Learnt
 
 - How to create a Dark/Light Theme and how to make it accesible for screen readers by adding the aria label.
-- Using display Block vs using display Flex to properly position different items.
+- Using display Block vs using display Flex to properly position different elements.
 
 ### Acknowledgements
 
