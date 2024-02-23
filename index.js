@@ -44,6 +44,7 @@ passwordEL1.innerHTML = generatePasswords();
 passwordEL2.innerHTML = generatePasswords();
 }
 
+/* Allow user to copy passwords by clicking on them */
 
 /* Allow user to clear passwords with the Clear Passwords button */
 /* Retrieve Clear Passwords button from HTML file and store  in a JavaScript variable*/
@@ -58,5 +59,6 @@ function clearPasswords(){
     document.getElementById("passwordEL1").innerHTML = " ";
     document.getElementById("passwordEL2").innerHTML = " ";
 }
+
 
 
