@@ -91,6 +91,7 @@ p, label{
 .password-display{
   background: var(--display-bg);
   color: var(--display-color);
+  text-align: center;
   border-radius: 1em;
   width: 15%;
   height: 2rem;
