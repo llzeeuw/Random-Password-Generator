@@ -12,7 +12,13 @@ let passwordLength = 12;
 let passwordEL1 = document.getElementById("password-el1");
 let passwordEL2 = document.getElementById("password-el2");
 
-/* Create on-click functionality button */ 
+/* Retrieve Generate Password button from HTML file and store  in a JavaScript variable*/
+let genPasswordsBtnEL = document.getElementById("genPasswordsBtn-el");
+
+/* Create on-click functionality Generate Password button */ 
+genPasswordsBtnEL.addEventListener("click", (displayPasswords));
+
+
 
 
 /* Set password length according to user input */ 
@@ -33,8 +39,24 @@ function generatePasswords(){
 }
 
 /* Store passwords in PasswordEL's and show them in the HTML */ 
-
+function displayPasswords(){
 passwordEL1.innerHTML = generatePasswords();
 passwordEL2.innerHTML = generatePasswords();
+}
 
-/* Create reset passwords function */
+
+/* Allow user to clear passwords with the Clear Passwords button */
+/* Retrieve Clear Passwords button from HTML file and store  in a JavaScript variable*/
+let clearPasswordsBtnEL = document.getElementById("clearPasswordsBtn-el");
+
+
+/* Create on-click functionality Clear Passwords button */ 
+clearPasswordsBtnEL.addEventListener("click", (clearPasswords));
+
+/* Create Clear passwords function */
+function clearPasswords(){
+    document.getElementById("passwordEL1").innerHTML = " ";
+    document.getElementById("passwordEL2").innerHTML = " ";
+}
+
+

@@ -34,9 +34,10 @@
 
 ## My process
 - First I set up the semantic structure of the HTML file.
-- Secondly I adapted the design from the Figma file so the colors would be a bit more bold with CSS. 
-- Thirdly I added the JavaScript functionality.
-- Made the app responsive by changing the flex-direction for mobile devices. 
+- Secondly I adapted the design from the Figma file to contain the extra features. 
+- Thirdly I researched how to implement the different JavaScript functionalities that I wanted to add. 
+- Fourthly added the JavaScript functionality.
+- Finally Made the app responsive by changing the flex-direction for mobile devices. 
 
 ### Languages and Tools
 
@@ -48,12 +49,16 @@
 
 ### What I Learnt
 
+- How to properly research functionalities that you haven't used before. The Codercoder video linked in the acknowledgements shows this process really well.
 - How to create a Dark/Light Theme and how to make it accesible for screen readers by adding the aria label.
 - Using display Block vs using display Flex to properly position different elements.
 
 ### Acknowledgements
 
 - [Scrimba](https://scrimba.com)
+- [Codercoder](https://www.youtube.com/watch?v=krfUjg0S2uI&t=1482s) 
+      Useful video on the research process before starting a project. 
+      Also explains Dark/light theme implementation.
 
 ## Author
 

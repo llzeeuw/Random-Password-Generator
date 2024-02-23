@@ -32,7 +32,7 @@
             <main>
                 <h1>Generate a <span id="title-color2">random password</span></h1>
                 <p>Never use an insecure password again.</p>
-                <button class="buttons">Generate passwords</button>
+                <button id="genPasswordsBtn-el" class="buttons">Generate passwords</button>
 
                 <section id="password-boxes" class="container">
                     <div id="password-el1" class="password-display"></div>           
@@ -42,7 +42,7 @@
                 <!--Extra options so user can choose the length of the password and clear the provided passwords if they want to generate new ones-->
                 <div>
                     <label for="pw-length">Set desired password length (min. 12 max. 20)</label><input type="number" id="pw-length" min="12" max="20" placeholder="15">
-                    <button class="buttons">Clear passwords</button>
+                    <button id="clearPasswordsBtn-el" class="buttons">Clear passwords</button>
                 </div>
             </main>
         </section>
