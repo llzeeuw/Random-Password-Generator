@@ -56,8 +56,8 @@ clearPasswordsBtnEL.addEventListener("click", (clearPasswords));
 
 /* Create Clear passwords function */
 function clearPasswords(){
-    document.getElementById("passwordEL1").innerHTML = " ";
-    document.getElementById("passwordEL2").innerHTML = " ";
+    passwordEL1.innerHTML = " ";
+    passwordEL2.innerHTML = " ";
 }
 
 
