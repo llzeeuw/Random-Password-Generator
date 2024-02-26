@@ -36,6 +36,16 @@ genPasswordsBtnEL.addEventListener("click", (displayPasswords));
 
 
 /* Set password length according to user input */ 
+
+/* Show slider value */
+let pwSliderEl = document.getElementById("pwslider-el");
+let output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+pwSliderEl.oninput = function() {
+  output.innerHTML = this.value;
+}
 /* Create an input event listener for slider element */ 
 
 
