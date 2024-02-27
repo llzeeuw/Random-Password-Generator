@@ -42,7 +42,7 @@ let genPasswordsBtnEL = document.getElementById("genPasswordsBtn-el");
         // Display the value of the slider
         pwSliderDisplayEl.textContent = `${pwSliderEl.value}`;
         // Assign user input value to passwordLength 
-        passwordLength = parseInt(pwSliderEl.value, 10);
+        passwordLength = pwSliderEl.value;
       });
 
 

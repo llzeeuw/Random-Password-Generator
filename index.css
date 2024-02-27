@@ -78,6 +78,14 @@ p, label{
   margin-bottom: 0.8rem;
 }
 
+.flex-container, .container{
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* Styling buttons */ 
 .buttons{
   background: var(--button-bg);
@@ -101,6 +109,7 @@ p, label{
   padding-top: 0.4rem; 
   margin: 0.7rem;
 }
+
 
 /* Style password length slider */
 input{
@@ -126,13 +135,6 @@ input{
   }
   }
 
-  .flex-container, .container{
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
 /* Tablets */ 
 @media (max-width:888px)  {
   /* Increase button and password display size */ 
@@ -144,13 +146,6 @@ input{
     width: 50%;
   }
 
-  
-  .flex-container, .container{
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
   }
 
 
