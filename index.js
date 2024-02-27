@@ -6,15 +6,12 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 /* Allow user to switch between Dark and Light themes*/
-
-
-// target the button using the data attribute we added earlier
+/* Retrieve Dark/Light button from HTML file and store  in a JavaScript variable*/
 let darkLightBtnEL = document.querySelector("[data-theme-toggle]");
 
 darkLightBtnEL.addEventListener("click", () => {
   let newTheme = document.querySelector("html").getAttribute("data-theme") === "dark" ? "light" : "dark";
   document.querySelector("html").setAttribute("data-theme", newTheme);
-  console.log("this works");
 });
 
 
@@ -43,9 +40,9 @@ let pwSliderDisplayEl = document.getElementById("pwslider-display-el");
 
 pwSliderEl.addEventListener("input", function () {
   // Display the value of the slider
-  pwSliderDisplayEl.textContent = `${pwSliderDisplayEl.value}`;
+  pwSliderDisplayEl.textContent = `${pwSliderEl.value}`;
   // Assign to passwordLength new value
-  passwordLength = pwSliderDisplayEl.value;
+  passwordLength = pwSliderEl.value;
 });
 
 

@@ -107,7 +107,7 @@ input{
 }
 
 #pwslider-value-el{
-  color: var(--titlecolor2);
+  color: var(--display-color);
 }
 
 /* Media Queries */ 

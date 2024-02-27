@@ -9,7 +9,8 @@
 - [My Process](#my-process)
   - [Languages and Tools](#languages-and-tools)
   - [What I Learnt](#what-i-learnt)
-  - [Useful Resources](#useful-resources)
+  - [Acknowledgements](#acknowledgements)
+)
 - [Author](#author)
 
 ## Figma Design
@@ -49,8 +50,8 @@
 
 ### What I Learnt
 
-- How to properly research functionalities that you haven't used before. The Codercoder video linked in the acknowledgements shows this process really well.
-- How to create a Dark/Light Theme and how to make it accesible for screen readers by adding the aria label.
+- How to properly research functionalities that you haven't used before. The Codercoder video linked in the acknowledgements section shows this process really well.
+- How to create a Dark/Light Theme with CSS variables and how to make it accesible for screen readers by adding the aria label.
 - Using display Block vs using display Flex to properly position different elements.
 
 ### Acknowledgements
