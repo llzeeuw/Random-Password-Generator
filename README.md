@@ -10,7 +10,6 @@
   - [Languages and Tools](#languages-and-tools)
   - [What I Learnt](#what-i-learnt)
   - [Acknowledgements](#acknowledgements)
-)
 - [Author](#author)
 
 ## Figma Design
@@ -53,10 +52,14 @@
 - How to properly research functionalities that you haven't used before. The Codercoder video linked in the acknowledgements section shows this process really well.
 - How to create a Dark/Light Theme with CSS variables and how to make it accesible for screen readers by adding the aria label.
 - Using display Block vs using display Flex to properly position different elements.
+- How to use user input to modify a JavaScript function.
+- How to copy generated passwords to the clipboard. 
 
 ### Acknowledgements
 
 - [Scrimba](https://scrimba.com)
+- [SalmaAlam] (https://dev.to/whitep4nth3r/the-best-lightdark-mode-theme-toggle-in-javascript-368f)
+      Good explanation on how to add an accessible 
 - [Codercoder](https://www.youtube.com/watch?v=krfUjg0S2uI&t=1482s) 
       Useful video on the research process before starting a project. 
       Also explains Dark/light theme implementation.

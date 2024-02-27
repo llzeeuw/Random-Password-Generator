@@ -16,7 +16,7 @@
     </head>
 
     <body>
-        <section>
+        <section class="flex-container">
             <!--Allows users to switch between Dark and Light mode-->
             <section id="dark-light-container">
                 <button 
@@ -24,7 +24,7 @@
                 class="buttons" 
                 type="button"
                 data-theme-toggle
-                aria-label="Change to light theme">Dark/Light mode
+                aria-label="Toggle Dark/Light mode button">Dark/Light mode
                 </button>
             </section>
 
@@ -33,7 +33,7 @@
                 <h1>Generate a <span id="title-color2">random password</span></h1>
                 <p>Never use an insecure password again.</p>
                 <!--Extra option so user can choose the length of the password--> 
-                <label for="pwslider-el">Desired Password Length: <span id="pwslider-display-el">12</span></label>
+                <label for="pwslider-el">Password length: <span id="pwslider-display-el">12</span>.</label>
                 <input type="range" id="pwslider-el" class="slider" name="pwslider-el"  min="8" max="20" step="1"value="12">
                 <button id="genPasswordsBtn-el" class="buttons">Generate passwords</button>
 
@@ -44,7 +44,7 @@
 
                 <!--Extra option so user can clear the provided passwords if they want to generate new ones-->
                 <div>
-                    <button id="clearPasswordsBtn-el" class="buttons">Clear passwords</button>
+                    <button id="clearPasswordsBtn-el" class="buttons" aria-label="Clear generated passwords">Clear passwords</button>
                 </div>
             </main>
         </section>

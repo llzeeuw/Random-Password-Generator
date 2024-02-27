@@ -8,7 +8,7 @@
 
 /* Color Variables for Light and Dark theme */
 [data-theme="light"] {
-  --color-bg: #ffffff;
+  --color-bg: #e5f7f4;
   --titlecolor1: #2B283A;
   --title-color2: #10B981;
   --subtitle-color: #6B7280;
@@ -46,8 +46,9 @@ body{
 
 
 /* Styling Dark/Light Toggle button */
-#darklight{
+#darklight-btn-el{
   justify-content: start;
+  margin-top: 1rem;
 }
 
 /* Styling Title */ 
@@ -56,6 +57,7 @@ h1{
   font-weight: 800;
   font-size: 2.5rem;
   color: var(--titlecolor1);
+  margin: 1.5rem auto 1rem auto;
   margin-bottom: 1rem;
 }
 
@@ -76,7 +78,7 @@ p, label{
   margin-bottom: 0.8rem;
 }
 
-
+/* Styling buttons */ 
 .buttons{
   background: var(--button-bg);
   color: var(--button-color);
@@ -103,11 +105,10 @@ p, label{
 /* Style password length slider */
 input{
   text-align: center;
-  margin-top: 1rem;
 }
 
-#pwslider-value-el{
-  color: var(--display-color);
+#pwslider-display-el{
+  color: var(--title-color2);
 }
 
 /* Media Queries */ 
@@ -117,12 +118,17 @@ input{
 @media (max-width:480px)  {
    /* Increase button and password display size */ 
    .buttons{
-    width: 50%;
+    width: 60%;
   }
 
   .password-display{
-    width: 50%;
+    width: 60%;
   }
+  }
+
+  .flex-container{
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
 /* Tablets */ 
@@ -133,8 +139,15 @@ input{
   }
   
   .password-display{
-    width: 35%;
+    width: 40%;
   }
 
+  
+  .flex-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   }
 
+
+  
