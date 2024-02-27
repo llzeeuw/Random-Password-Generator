@@ -59,7 +59,7 @@
 
 - [Scrimba](https://scrimba.com)
 - [SalmaAlam] (https://dev.to/whitep4nth3r/the-best-lightdark-mode-theme-toggle-in-javascript-368f)
-      Good explanation on how to add an accessible 
+      Good explanation on how to add an accessible light/darkt theme toggle.
 - [Codercoder](https://www.youtube.com/watch?v=krfUjg0S2uI&t=1482s) 
       Useful video on the research process before starting a project. 
       Also explains Dark/light theme implementation.
