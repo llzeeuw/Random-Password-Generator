@@ -30,7 +30,7 @@
 
 ### Links
 
-- [Live 🔗](https://iqra0001.github.io/Basketball-Scoreboard/)
+- [Live 🔗](https://randompwgenerator-llzeeuw.netlify.app)
 
 ## My process
 - First I set up the semantic structure of the HTML file.

@@ -26,7 +26,7 @@ let passwordEL2 = document.getElementById("password-el2");
 let genPasswordsBtnEL = document.getElementById("genPasswordsBtn-el");
 
     /* Create on-click functionality Generate Password button */ 
-    genPasswordsBtnEL.addEventListener("click", (displayPasswords));
+    genPasswordsBtnEL.addEventListener("click", displayPasswords);
 
 
 
@@ -42,7 +42,7 @@ let genPasswordsBtnEL = document.getElementById("genPasswordsBtn-el");
         // Display the value of the slider
         pwSliderDisplayEl.textContent = `${pwSliderEl.value}`;
         // Assign user input value to passwordLength 
-        passwordLength = pwSliderEl.value;
+        passwordLength = parseInt(pwSliderEl.value, 10);
       });
 
 
@@ -62,8 +62,8 @@ function generatePasswords(){
 
 /* Store passwords in PasswordEL's and show them in the HTML */ 
 function displayPasswords(){
-passwordEL1.innerHTML = generatePasswords();
-passwordEL2.innerHTML = generatePasswords();
+    passwordEL1.innerHTML = generatePasswords();
+    passwordEL2.innerHTML = generatePasswords();
 }
 
 /* Allow user to copy passwords by clicking on them */
@@ -83,7 +83,7 @@ passwordEL2.innerHTML = generatePasswords();
 
 
     /* Create on-click functionality Clear Passwords button */ 
-    clearPasswordsBtnEL.addEventListener("click", (clearPasswords));
+    clearPasswordsBtnEL.addEventListener("click", clearPasswords);
 
     /* Create Clear passwords function */
     function clearPasswords(){
