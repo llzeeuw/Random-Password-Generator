@@ -12,12 +12,10 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let darkLightBtnEL = document.querySelector("[data-theme-toggle]");
 
 darkLightBtnEL.addEventListener("click", () => {
-    let newTheme = "dark" ? "light" : "dark";
-  // update theme attribute on HTML to switch theme in CSS
+  let newTheme = document.querySelector("html").getAttribute("data-theme") === "dark" ? "light" : "dark";
   document.querySelector("html").setAttribute("data-theme", newTheme);
   console.log("this works");
-})
-
+});
 
 
 /* Declare variable in which password length can be stored. Standard length is set at 12.*/
@@ -37,16 +35,19 @@ genPasswordsBtnEL.addEventListener("click", (displayPasswords));
 
 /* Set password length according to user input */ 
 
-/* Show slider value */
-let pwSliderEl = document.getElementById("pwslider-el");
-let output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
+/* Get a reference to the slider and sliderNumber DOM elements */
+const pwSliderEl = document.getElementById("pwslider-el");
+let pwSliderDisplayEl = document.getElementById("pwslider-display-el");
 
-// Update the current slider value (each time you drag the slider handle)
-pwSliderEl.oninput = function() {
-  output.innerHTML = this.value;
-}
 /* Create an input event listener for slider element */ 
+
+pwSliderEl.addEventListener("input", function () {
+  // Display the value of the slider
+  pwSliderDisplayEl.textContent = `${pwSliderDisplayEl.value}`;
+  // Assign to passwordLength new value
+  passwordLength = pwSliderDisplayEl.value;
+});
+
 
 
 /* Generate password function */ 

@@ -100,15 +100,14 @@ p, label{
   margin: 0.7rem;
 }
 
-/* Style password length input */
+/* Style password length slider */
 input{
   text-align: center;
+  margin-top: 1rem;
 }
 
-#pw-length{
-  display: block;
-  text-align: center;
-  margin: 0.76rem auto;
+#pwslider-value-el{
+  color: var(--titlecolor2);
 }
 
 /* Media Queries */ 
